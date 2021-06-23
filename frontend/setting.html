@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello MUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="./js/mui.min.js"></script>
+    <link rel="stylesheet" href="./css/mui.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <script src="./js/setting.js"></script>
+  </head>
+  <body>
+    <header class="mui-bar mui-bar-nav">
+      <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+      <h1 class="mui-title">App Setting</h1>
+    </header>
+
+    <div class="mui-content mui-scroll-wrapper">
+      <div class="mui-scroll">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="mui-card">
+          <ul class="mui-table-view">
+            <div class="bar-title mybar-title">语音设置</div>
+            <li class="mui-table-view-cell mui-collapse voice-setting">
+              <a class="mui-navigate-right" href="#">设置发音语速</a>
+              <form class="mui-input-group mui-collapse-content" style="padding: 1px 0px 1px 0px;">
+                <div class="mui-input-row mui-radio mui-left" id="spd:15">
+                  <label class="mylabel">快速</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="spd:10">
+                  <label class="mylabel">常速</label>
+                  <input name="radio1" type="radio" class="myradio" checked>
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="spd:5">
+                  <label class="mylabel">慢速</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+              </form>
+            </li>
+            <li class="mui-table-view-cell mui-collapse voice-setting">
+              <a class="mui-navigate-right" href="#">设置发音语调</a>
+              <form class="mui-input-group mui-collapse-content" style="padding: 1px 0px 1px 0px;">
+                <div class="mui-input-row mui-radio mui-left" id="pit:15">
+                  <label class="mylabel">高昂</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="pit:10">
+                  <label class="mylabel">正常</label>
+                  <input name="radio1" type="radio" class="myradio" checked>
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="pit:5">
+                  <label class="mylabel">低沉</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+              </form>
+            </li>
+            <li class="mui-table-view-cell mui-collapse voice-setting">
+              <a class="mui-navigate-right" href="#">设置发音音量</a>
+              <form class="mui-input-group mui-collapse-content" style="padding: 1px 0px 1px 0px;">
+                <div class="mui-input-row mui-radio mui-left" id="vol:15">
+                  <label class="mylabel">偏大</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="vol:10">
+                  <label class="mylabel">正常</label>
+                  <input name="radio1" type="radio" class="myradio" checked>
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="vol:5">
+                  <label class="mylabel">偏小</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+              </form>
+            </li>
+            <li class="mui-table-view-cell mui-collapse voice-setting">
+              <a class="mui-navigate-right" href="#">设置发音人</a>
+              <form class="mui-input-group mui-collapse-content" style="padding: 1px 0px 1px 0px;">
+                <div class="mui-input-row mui-radio mui-left" id="per:1">
+                  <label class="mylabel">发音人A</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="per:2">
+                  <label class="mylabel">发音人B</label>
+                  <input name="radio1" type="radio" class="myradio" checked>
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="per:3">
+                  <label class="mylabel">发音人C</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="per:4">
+                  <label class="mylabel">发音人D</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+              </form>
+            </li>
+            <li class="mui-table-view-cell mui-collapse voice-setting">
+              <a class="mui-navigate-right" href="#">设置录音语种</a>
+              <form class="mui-input-group mui-collapse-content" style="padding: 1px 0px 1px 0px;">
+                <div class="mui-input-row mui-radio mui-left" id="dev_pid:1536">
+                  <label class="mylabel">普通话</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="dev_pid:1637">
+                  <label class="mylabel">粤语</label>
+                  <input name="radio1" type="radio" class="myradio" checked>
+                </div>
+                <div class="mui-input-row mui-radio mui-left" id="dev_pid:1737">
+                  <label class="mylabel">英语</label>
+                  <input name="radio1" type="radio" class="myradio">
+                </div>
+              </form>
+            </li>
+            <div class="line"></div>
+            <div class="bar-title mybar-title">样式设置</div>
+            <li class="mui-table-view-cell mui-collapse avater-style-setting">
+              <a class="mui-navigate-right" href="#">设置个人头像</a>
+              <div class="mui-collapse-content" style="padding: 0 0 0 3px">
+                <div class="myimagelist">
+                  <img src="./images/avaters/1.jpg" width="53px;" id="avater-style:1" class="avater-style">
+                  <img src="./images/avaters/2.jpg" width="53px;" id="avater-style:2" class="avater-style">
+                  <img src="./images/avaters/3.jpg" width="53px;" id="avater-style:3" class="avater-style">
+                  <img src="./images/avaters/4.jpg" width="53px;" id="avater-style:4" class="avater-style">
+                  <img src="./images/avaters/5.jpg" width="53px;" id="avater-style:5" class="avater-style">
+                  <img src="./images/avaters/6.jpg" width="53px;" id="avater-style:6" class="avater-style">
+                  <img src="./images/avaters/7.jpg" width="53px;" id="avater-style:7" class="avater-style">
+                </div>
+                <div class="myimagelist">
+                  <img src="./images/avaters/8.jpg" width="53px;" id="avater-style:8" class="avater-style">
+                  <img src="./images/avaters/9.jpg" width="53px;" id="avater-style:9" class="avater-style">
+                  <img src="./images/avaters/10.jpg" width="53px;" id="avater-style:10" class="avater-style">
+                  <img src="./images/avaters/11.jpg" width="53px;" id="avater-style:11" class="avater-style">
+                  <img src="./images/avaters/12.jpg" width="53px;" id="avater-style:12" class="avater-style">
+                  <img src="./images/avaters/13.jpg" width="53px;" id="avater-style:13" class="avater-style">
+                  <img src="./images/avaters/14.jpg" width="53px;" id="avater-style:14" class="avater-style">
+                </div>
+              </div>
+            </li>
+            <li class="mui-table-view-cell mui-collapse robot-style-setting">
+              <a class="mui-navigate-right" href="#">设置机器人头像</a>
+              <div class="mui-collapse-content" style="padding: 0 0 0 3px">
+                <div class="myimagelist">
+                  <img src="./images/robots/1.jpg" width="53px;" id="robot-style:1" class="robot-style">
+                  <img src="./images/robots/2.jpg" width="53px;" id="robot-style:2" class="robot-style">
+                  <img src="./images/robots/3.jpg" width="53px;" id="robot-style:3" class="robot-style">
+                  <img src="./images/robots/4.jpg" width="53px;" id="robot-style:4" class="robot-style">
+                  <img src="./images/robots/5.jpg" width="53px;" id="robot-style:5" class="robot-style">
+                  <img src="./images/robots/6.jpg" width="53px;" id="robot-style:6" class="robot-style">
+                  <img src="./images/robots/7.jpg" width="53px;" id="robot-style:7" class="robot-style">
+                </div>
+                <div class="myimagelist">
+                  <img src="./images/robots/8.jpg" width="53px;" id="robot-style:8" class="robot-style">
+                  <img src="./images/robots/9.jpg" width="53px;" id="robot-style:9" class="robot-style">
+                  <img src="./images/robots/10.jpg" width="53px;" id="robot-style:10" class="robot-style">
+                  <img src="./images/robots/11.jpg" width="53px;" id="robot-style:11" class="robot-style">
+                  <img src="./images/robots/13.jpg" width="53px;" id="robot-style:12" class="robot-style">
+                  <img src="./images/robots/14.jpg" width="53px;" id="robot-style:13" class="robot-style">
+                  <img src="./images/robots/15.jpg" width="53px;" id="robot-style:14" class="robot-style">
+                </div>
+              </div>
+            </li>
+            <li class="mui-table-view-cell mui-collapse background-style-setting">
+              <a class="mui-navigate-right" href="#">设置聊天背景</a>
+              <div class="mui-collapse-content" style="padding: 0 0 0 3px">
+                <div class="myimagelist">
+                  <img src="./images/background/1.jpg" width="53px;" id="background-style:1" class="background-style">
+                  <img src="./images/background/2.jpg" width="53px;" id="background-style:2" class="background-style">
+                  <img src="./images/background/3.jpg" width="53px;" id="background-style:3" class="background-style">
+                  <img src="./images/background/4.jpg" width="53px;" id="background-style:4" class="background-style">
+                  <img src="./images/background/5.jpg" width="53px;" id="background-style:5" class="background-style">
+                  <img src="./images/background/6.jpg" width="53px;" id="background-style:6" class="background-style">
+                  <img src="./images/background/7.jpg" width="53px;" id="background-style:7" class="background-style">
+                </div>
+                <div class="myimagelist">
+                  <img src="./images/background/8.jpg" width="53px;" id="background-style:8" class="background-style">
+                  <img src="./images/background/9.jpg" width="53px;" id="background-style:9" class="background-style">
+                  <img src="./images/background/10.jpg" width="53px;" id="background-style:10" class="background-style">
+                  <img src="./images/background/11.jpg" width="53px;" id="background-style:11" class="background-style">
+                  <img src="./images/background/12.jpg" width="53px;" id="background-style:12" class="background-style">
+                  <img src="./images/background/13.jpg" width="53px;" id="background-style:13" class="background-style">
+                  <img src="./images/background/14.jpg" width="53px;" id="background-style:14" class="background-style">
+                </div>
+              </div>
+            </li>
+            <div class="line"></div>
+            <div class="bar-title mybar-title">其他设置</div>
+            <li class="mui-table-view-cell mui-collapse">
+              <a class="mui-navigate-right" href="#">重置App设置</a>
+              <div class="mui-collapse-content">
+                <div class="reset">
+                  <span>确认重置App设置</span>
+                </div>
+              </div>
+            </li>
+            <li class="mui-table-view-cell mui-collapse">
+              <a class="mui-navigate-right" href="#">删除聊天记录</a>
+              <div class="mui-collapse-content">
+                <div class="delete">
+                  <span>确认删除聊天记录</span>
+                </div>
+              </div>
+            </li>
+            <li class="mui-table-view-cell mui-collapse">
+              <a class="mui-navigate-right" href="#">关于App</a>
+              <div class="mui-collapse-content">
+                <b>语音聊天机器人&nbsp;&nbsp;&nbsp;&nbsp;</b><br />
+                <b>何国鑫&nbsp;&nbsp;&nbsp;&nbsp;于广东工业大学</b><br />
+                <b>2019 / 06 / 01</b>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </body>
+</html>
